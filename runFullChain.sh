@@ -34,13 +34,10 @@ singularity exec -B /sdf,/scratch,/lscratch ${SINGULARITY_IMAGE_PATH} ${COMMAND}
 
 #-----------------------
 
-LARNDSIM_ROOT=$HOME/studies/larnd-sim-latest
-
 DUMPTREEDIR=${OUTDIR}/dumpTree
 mkdir $DUMPTREEDIR
 DUMPTREEOUTPUT=${DUMPTREEDIR}/dumpTree_single_particle_${UUID}.h5
 
-cd $LARNDSIM_ROOT/cli
 COMMAND="python3 dumpTree.py ${EDEPOUTPUT} ${DUMPTREEOUTPUT}"
 
 singularity exec -B /sdf,/scratch,/lscratch ${SINGULARITY_IMAGE_PATH} ${COMMAND}
