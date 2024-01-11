@@ -1,0 +1,52 @@
+# ===============
+# mpvmpr_cfg.yaml
+# ===============
+
+SEED: -1
+GeneratorMPV:
+  NumEvent: [1,1]
+  NumParticle: [1,1]
+  XRange: [-29000,29000]
+  YRange: [-7250,7250]
+  ZRange: [-12000,0]
+  TRange: [0,10]
+  AddParent: True
+  Particles:
+    -
+      # PDG:      [11,22,13,211,2212]
+      PDG:      [2112]
+      NumRange: [1,1]
+      KERange:  [1,4] 
+      UseMom:   False
+      Weight:   1
+
+# GeneratorMPR:
+#   NumEvent: [1,1]
+#   NumParticle: [1,5]
+#   # XRange: [-300,300]
+#   # YRange: [-600,600]
+#   # ZRange: [-300,300]
+#   XRange: [-360,360]
+#   YRange: [-150,150]
+#   ZRange: [410,920]
+#   TRange: [0,10]
+#   Particles:
+#     -
+#       PDG:  [13]
+#       NumRange: [0,5]
+#       KERange:  [0,1]
+#       UseMom:   False
+#       Weight:   8
+#     -
+#       PDG:      [11]
+#       NumRange: [0,5]
+#       KERange:  [0,1]
+#       UseMom:   False
+#       Weight:   1
+
+#     -
+#       PDG:      [2112]
+#       NumRange: [0,5]
+#       KERange:  [0,1]
+#       UseMom:   False
+#       Weight:   1
